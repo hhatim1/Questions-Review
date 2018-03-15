@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<fieldset>
+  <legend>
+    <h3>Please login in here</h3>
+  </legend>
+  <form (submit)='login()'>
+    Your Name:
+    <input placeholder="name" type="text" name="name" required minlength=3 maxlenght="20" [(ngModel)]='user.name' #name='ngModel'>
+
+    <input *ngIf='!name.errors' type="submit" value="submit">
+
+    <!-- validation -->
+    <div *ngIf='name.errors && name.dirty'>
+          <p>Name is required</p>
+    </div>
+  </form>
+</fieldset>
+

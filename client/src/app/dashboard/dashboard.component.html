@@ -1,0 +1,38 @@
+<a href="/logout">
+  <button>logout</button>
+</a>
+
+<h3>Welcome {{user.name}}</h3>
+
+<a [routerLink]="['/new']"><button>Create a question</button>
+</a>
+
+<h3>List of available questions</h3>
+
+<table>
+  <thead>
+    <th>Created by Name</th>
+    <th>Question</th>
+    <th>created_At</th>
+    <th>answer it</th>
+    <th>Delete</th>
+  </thead>
+
+  <tbody *ngFor="let question of questionArray">
+    <tr>
+        <td>{{question._user.name}}</td>
+
+        <a href='/questionInfo/{{question._id}}'>{{question.content}}</a>
+    <td>{{question.createdAt}}</td>
+    <td>
+  
+      <a [routerLink]="['/answerIT']">
+        <button>Your answer</button>
+      </a>
+      <td>
+        <a (click)='delete(question._id)' href="/dashboard">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+
+</table>

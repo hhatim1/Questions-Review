@@ -1,0 +1,32 @@
+<a href="/dashboard"><button>go back</button></a>
+
+<a href="/logout">
+  <button>logout</button>
+</a>
+
+<h3>Question content: {{this.question?.content}}</h3>
+
+
+<table>
+  <thead>
+    <th>Tag / Description</th>
+    
+    <th>Likes</th>
+    
+    <th>like it</th>
+
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>{{question?.ans1}}</td>
+      <td>{{question?.likes}}</td>
+      <td>
+        <a (click)='like(question?._id)' href='/questionInfo/{{question?._id}}'>like</a>
+      </td>
+    </tr>
+    
+
+  </tbody>
+
+</table>

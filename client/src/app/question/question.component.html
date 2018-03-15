@@ -1,0 +1,26 @@
+<a href="/logout">
+  <button>Logout</button>
+</a>
+<a href="/dashboard">
+  <button>Cancel</button>
+</a>
+
+<h3>Question / Tag - Descript</h3>
+
+<form (submit)='addDescrip()'>
+
+  <label for="">Question:</label>
+  <input type="text" name="content" [(ngModel)]='question.content'>
+  <br>
+  <br>
+
+  <label for="">Tag / Descrip:</label>
+  <input type="text" name="ans1" [(ngModel)]='question.ans1'>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <input type="submit" value="Create new Question">
+
+</form>
