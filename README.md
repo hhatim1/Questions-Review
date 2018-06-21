@@ -1,23 +1,8 @@
 # Questions-Review Application
 
-This was created using JavaScript - MEAN stack, it uses MongoDB, Express,  Angular and Node.js.
-The objective is to create the basic functionality described in the wire-frame - Please check question_answer_wireframe.png 
+This was created using JavaScript - 
 
-# First make sure the following are installed in the application main folder:
-
-npm install express
-npm install ejs
-npm install express --save
-npm install ejs --save
-npm install body-parser --save
-npm install mongoose --save
-npm install express-session
-
-
-# To start the MEAN application
-
-Start MongoDB: sudo mongod
-Start the application: nodemon server.js
+MEAN stack. It uses MongoDB, Express,  Angular and Node.js.
 
 
 # Required Features:
@@ -47,22 +32,44 @@ Use JWT (JavaScript Web Tokens) to maintain your logged in user info! https://jw
 
 # Development server
 
-MEAN application
+# First make sure the following are installed in the application main folder:
 
-Start MongoDB: sudo mongodb
+npm install express
+
+npm install ejs
+
+npm install express --save
+
+npm install ejs --save
+
+npm install body-parser --save
+
+npm install mongoose --save
+
+npm install express-session
+
+
+# To start the MEAN application
+
+Start MongoDB: sudo mongod
+
 From the terminal: nodemon server.js
 
 Navigate to `http://localhost:8000/`. 
+
 The app will automatically reload if you change any of the source files.
 
 # Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. 
+
 You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 # Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. 
+
+Use the `-prod` flag for a production build.
 
 # Running unit tests
 
