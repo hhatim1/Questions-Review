@@ -1,9 +1,23 @@
 # Questions-Review Application
 
-This was created for the MEAN stack, it uses Node.js, Angular.js and MongoDB.
+This was created using JavaScript - MEAN stack, it uses MongoDB, Express,  Angular and Node.js.
 The objective is to create the basic functionality described in the wire-frame - Please check question_answer_wireframe.png 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+# First make sure the following are installed in the application main folder:
+
+npm install express
+npm install ejs
+npm install express --save
+npm install ejs --save
+npm install body-parser --save
+npm install mongoose --save
+npm install express-session
+
+
+# To start the MEAN application
+
+Start MongoDB: sudo mongod
+Start the application: nodemon server.js
 
 
 # Required Features:
