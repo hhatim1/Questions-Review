@@ -1,8 +1,8 @@
 # Questions-Review Application
 
-This was created using JavaScript - 
+This was created using JavaScript - MEAN stack. 
 
-MEAN stack. It uses MongoDB, Express,  Angular and Node.js.
+It uses MongoDB, Express,  Angular and Node.js.
 
 
 # Required Features:
